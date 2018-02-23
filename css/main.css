@@ -12,18 +12,38 @@ I've left some boilerplate below for you.
 
 */
 
+body,
+html {
+  margin: 0;
+  
+  /* height: 100%;  Removed to hide the lateral scrollbar */
+  width: 100vw;
+  overflow-x: hidden; /* fix for right sliding menu */
+  
+}
+
 body {
-
+  font-family: Roboto;
+  font-size: 12px;
+  color: #424242;
 }
 
-article {
 
+
+
+
+
+header{
+max-width:50em;
+margin: 0 auto; 
+padding: 10px 
+}
+article{ 
+max-width:50em;
+margin: 0 auto;
+padding: 10px 
 }
 
-h1 {
-
-}
-
-img {
-
+article img{ 
+  max-width:100%;
 }

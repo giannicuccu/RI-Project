@@ -12,15 +12,23 @@ module.exports = function(grunt) {
     responsive_images: {
       dev: {
         options: {
-          engine: 'im',
+          engine: 'gm',
           sizes: [{
-            /*
-            Change these:
+            name: 'small',
+            width: 400,
+            quality: 60
             
-            width: ,
-            suffix: ,
-            quality:
-            */
+          },{
+            name: 'medium',
+            width: 800,
+            quality: 60
+            
+          },{
+            name: "large",
+            width: 1024,
+            separator: "-",
+            suffix: "_x2",
+            quality: 60
           }]
         },
 
@@ -58,8 +66,10 @@ module.exports = function(grunt) {
       dev: {
         files: [{
           expand: true,
-          src: 'images_src/fixed/*.{gif,jpg,png}',
-          dest: 'images/'
+          //src: 'images_src/fixed/*.{gif,jpg,png}',
+          src: ['*.{gif,jpg,png}'],
+          cwd: 'images_src/fixed/',
+          dest: 'images/fixed/'
         }]
       },
     },
