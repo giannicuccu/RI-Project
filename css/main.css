@@ -66,6 +66,11 @@ body {
   max-width: 100%;
 }
 
+.mainbox picture {
+  max-width: 100%;
+}
+
+
 .mytit{font-size: 1.125rem; font-weight: 700;}
 
 .photo {
@@ -110,6 +115,7 @@ body {
   color: #A3897A;
   text-decoration: none;
 }
+
 
 /* zocial */
 
